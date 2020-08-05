@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap');
+
+:root {
+	--principal-color: #e0ffff;
+}
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.containerSearch,
+.containerResults {
+	max-width: 900px;
+	min-height: 250px;
+	margin: auto;
+	text-align: center;
+}
+
+h3 {
+	margin: 50px 0px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	color: #006400;
+	text-transform: uppercase;
+}
+
+#totalUsers {
+	display: flex;
+	padding: 16px;
+}
+
+img {
+	margin: 8px 0;
+	margin-left: 20px;
+	border-radius: 50%;
+	text-align: left;
+}
+
+p {
+	margin: 16px 0;
+	margin-left: 20px;
+	text-align: left;
+}
+
+input[type=text] {
+	width: 60%;
+	padding: 16px;
+	border-bottom: solid 2px #008000;
+	font-size: 24px;
+	outline: none;
+}
+
+button {
+	margin-left: 10px;
+	width: 20%;
+	padding: 8px;
+	background-color: #008000;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 900;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.containerResults {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+#resultsUsers,
+#dataDiv {
+	border: solid 2px #ccc;
+	border-radius: 24px;
+}
